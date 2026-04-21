@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="/style/tech.css">
+    <link rel="stylesheet" href="/style/portofolio.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="">HOME</a>
+            <a href="">PORTOFOLIO</a>
+            <a href="">RESUME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <p class="title">Hello, I'm <br> <strong>Muhammad</strong></p>
+            <p>AND THIS IS MY RESUME</p>
+        </div>
+
+        <div class="tech">
+            <p>Trusted By <strong>My Technology Stack</strong></p>
+            <div class="cards">
+                <div class="card c1">HTML</div>
+                <div class="card c2">CSS</div>
+                <div class="card c3">JS</div>
+                <div class="card c4">PostgreSQL</div>
+                <div class="card c5">Hono</div>
+                <div class="card c6">Drizzle</div>
+            </div>
+        </div>
+
+        <div class="portofolio">
+            <div class="c1">
+
+                <img src="asset/mieku-n-store.png" alt="">
+                <div class="text">
+                    <h3>Mieku-n Store</h3>
+                    <p>Online Store</p>
+
+                    <div class="tech">
+                        <span>NodeJs</span>
+                        <span>Hono</span>
+                        <span>Drizzle</span>
+                    </div>
+
+                    <div class="deploy">
+                        <a href="https://github.com/MC-AHN/MIEKU-N-STORE">Repo</a>
+                        <a href="https://mieku-n-cafe.alchemists.my.id/">Demo</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const navbar = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            const scrollHeight = window.pageYOffset;
+
+            if (scrollHeight > 100) {
+                navbar.classList.add('scrolled')
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

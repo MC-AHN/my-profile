@@ -1,0 +1,35 @@
+.portofolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: #1a1a1c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portofolio > div {
+    position: relative;
+    height: 400px;
+    width: 450px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portofolio > div img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    padding: 2px;   
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.portofolio > div .text {
+    text-align: center;
+    color: wheat;
+}
+
+.portofolio > div .text h3 {
+    font-width: bold;
+}
