@@ -1,5 +1,5 @@
 .tech {
-    background-color: #121212;
+    background-color: #1a1a1a;
     height: 25rem;
     padding: 5rem;
     display: flex;
@@ -18,24 +18,26 @@
     display: flex;
     color: white;
     justify-content: center;
-    gap: 8rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .tech .cards .card {
-    padding: 0.8rem 3rem;
-    background-color: #373636;
+    background-color: #333333;
     border-radius: 0.5rem;
-    scale: 1.5;
+    padding: 1.5rem 2.5rem;
     font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+
 }
 
 .tech .cards .c1 {
-    color: #FF5733;
+    color: #979797;
 }
 
 .tech .cards .c2 {
-    color: #2196F3;
+    color: #4285f4;
 }
 
 .tech .cards .c3 {
@@ -43,13 +45,13 @@
 }
 
 .tech .cards .c4 {
-    color: #4169E1;
+    color: #00a4ef;
 }
 
 .tech .cards .c5 {
-    color: #FF7E00;
+    color: #ff9900;
 }
 
 .tech .cards .c6 {
-    color: #C5F74F;
+    color: #e50914;
 }

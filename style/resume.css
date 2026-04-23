@@ -1,0 +1,11 @@
+.resume {
+    background-color: #1a1a1a;
+    padding: 2rem;
+}
+
+.resume>p {
+    text-align: center;
+    color: #f5f5f5;
+    letter-spacing: 2px;
+
+}
