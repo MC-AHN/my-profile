@@ -1,0 +1,85 @@
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 150px 10%;
+    background-color: #1a1a1a;
+    min-height: 80vh;
+    border-top: 1px solid #242424;
+}
+
+.aboutme .image img {
+    width: 380px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0 #242424;
+    filter: grayscale(0.3);
+    transition: 0.4s ease;
+}
+
+.aboutme .image img:hover {
+    filter: grayscale(0);
+    transform: translateX(-5px, -5px);
+    box-shadow: 25px 25px 0 #c5f74f;
+}
+
+.aboutme .text {
+    max-width: 600px;
+}
+
+.aboutme .title-aboutme {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.aboutme .title-aboutme strong {
+    color: #c5f74f;
+}
+
+.aboutme .desc {
+    color: #b0b0b0;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.aboutme .btn {
+    display: flex;
+    gap: 20px;
+}
+
+.aboutme .btn a {
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.aboutme .hireme {
+    background-color: #c5f74f;
+    color: #000;
+    border: 2px solid #c5f74f;
+}
+
+.aboutme .hireme:hover {
+    background-color: transparent;
+    color: #c5f74f;
+}
+
+.aboutme .cv {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #333;
+}
+
+.aboutme .cv {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000;
+}
