@@ -7,5 +7,83 @@
     text-align: center;
     color: #f5f5f5;
     letter-spacing: 2px;
+    font-size: 32px;
+}
 
+.resume .wrap {
+    display: flex;
+    margin-top: 5rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.resume .wrap .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.resume .wrap .card > .title {
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.resume .wrap .card .content {
+    width: 50rem;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #242424;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.resume .wrap .card .content .date {
+    font-size: 12px;
+    margin-bottom: 10px;
+    gap: 6px;
+    text-transform: uppercase;
+}
+
+.icon-calendar {
+    color: #C5F74F; /* Samakan dengan warna Hono kamu */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.resume .wrap .card .content .title {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
+
+.resume .wrap .card .content .subtitle {
+    font-size: 0.9rem;
+    color: #C5F74F;
+    margin-bottom: 15px;
+}
+
+.milestones .icon-calendar, .milestones .subtitle {
+    color: #E36002;
+}
+
+.resume .wrap .card .content ul {
+    margin:  0;
+    padding-left: 18px;
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.resume .wrap .card .content li {
+    margin-bottom: 5px;
+}
+
+.resume .wrap .card .content .location {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
 }
