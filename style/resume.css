@@ -62,11 +62,14 @@
 
 .resume .wrap .card .content .subtitle {
     font-size: 0.9rem;
-    color: #C5F74F;
     margin-bottom: 15px;
 }
 
-.milestones .icon-calendar, .milestones .subtitle {
+.resume .wrap .education .subtitle {
+    color: #C5F74F;
+}
+
+.milestones .icon-calendar, .milestones .subtitle.mil {
     color: #E36002;
 }
 

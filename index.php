@@ -12,18 +12,12 @@
     <link rel="stylesheet" href="/style/portofolio.css">
     <link rel="stylesheet" href="/style/resume.css">
     <link rel="stylesheet" href="/style/aboutme.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/footer.css">
 </head>
 
 <body>
-    <nav>
-        <div class="container">
-            <a href="">HOME</a>
-            <a href="">PORTOFOLIO</a>
-            <a href="">RESUME</a>
-            <a href="">ABOUT</a>
-            <a href="">CONTACT</a>
-        </div>
-    </nav>
+    <?php include './partial/nav.php'?>
 
     <main>
         <div class="hero">
@@ -180,7 +174,7 @@
                             Januari - Febuari 2026
                         </p>
                         <p class="title">Mieku-n Store Project</p>
-                        <p class="subtitle">Fullstack Implementation</p>
+                        <p class="subtitle mil">Fullstack Implementation</p>
                         <p class="desc">
                         <ul>
                             <li>Membangun platform toko online sebagai sarana praktik integrasi antara frontend dan
@@ -203,7 +197,7 @@
                             Desember 2025
                         </p>
                         <p class="title">Development Environment Setup</p>
-                        <p class="subtitle">Productivity Tooling</p>
+                        <p class="subtitle mil">Productivity Tooling</p>
                         <p class="desc">
                         <ul>
                             <li>Mengonfigurasi lingkungan kerja berbasis Linux (Fedora) untuk mendukung proses coding
@@ -226,7 +220,7 @@
                             Januari 2026
                         </p>
                         <p class="title">Adz-Dzikr Project</p>
-                        <p class="subtitle">Islamic Productivity Web App</p>
+                        <p class="subtitle mil">Islamic Productivity Web App</p>
                         <p class="desc">
                         <ul>
                             <li>Membangun platform katalog Surah Al-Qur'an digital yang ringan dan cepat diakses.</li>
@@ -268,22 +262,12 @@
                 </div>
             </div>
         </div>
+
     </main>
 
+    <?php include './partial/footer.php'?>
 
-    <script>
-        const navbar = document.querySelector('nav');
 
-        window.addEventListener('scroll', function () {
-            const scrollHeight = window.pageYOffset;
-
-            if (scrollHeight > 100) {
-                navbar.classList.add('scrolled')
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
 </body>
 
 </html>
