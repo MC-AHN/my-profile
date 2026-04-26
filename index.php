@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/nav.css">
-    <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="/style/tech.css">
-    <link rel="stylesheet" href="/style/portofolio.css">
-    <link rel="stylesheet" href="/style/resume.css">
-    <link rel="stylesheet" href="/style/aboutme.css">
-    <link rel="stylesheet" href="/style/contact.css">
-    <link rel="stylesheet" href="/style/footer.css">
-</head>
+<?php include './partial/meta.php'?>
 
 <body>
     <?php include './partial/nav.php'?>
@@ -28,58 +15,67 @@
         <div class="tech">
             <p>Trusted By <strong>My Technology Stack</strong></p>
             <div class="cards">
-                <div class="card c1">HTML</div>
-                <div class="card c2">CSS</div>
-                <div class="card c3">JS</div>
-                <div class="card c4">PostgreSQL</div>
-                <div class="card c5">Hono</div>
-                <div class="card c6">Drizzle</div>
+                <div class="card c1">
+                    <i class="fab fa-html5"></i> <span>HTML</span>
+                </div>
+                <div class="card c2">
+                    <i class="fab fa-css3-alt"></i> <span>CSS</span>
+                </div>
+                <div class="card c3">
+                    <i class="fab fa-square-js"></i> <span>JS</span>
+                </div>
+                <div class="card c4">
+                    <i class="fas fa-database"></i> <span>PostgreSQL</span>
+                </div>
+                <div class="card c5">
+                    <i class="fas fa-fire-alt"></i> <span>Hono</span>
+                </div>
+                <div class="card c6">
+                    <i class="fas fa-droplet"></i> <span>Drizzle</span>
+                </div>
             </div>
         </div>
 
         <div class="portofolio">
             <p>FEATURED <strong>PORTOFOLIO</strong></p>
             <div class="wrap">
-                <div class="c">
-
-                    <img src="asset/mieku-n-store.png" alt="">
+                <div class="project-card">
+                    <div class="img-box">
+                        <img src="asset/mieku-n-store.png" alt="Mieku-n Store">
+                    </div>
                     <div class="text">
                         <h3>Mieku-n Store</h3>
-                        <p>Online Store</p>
-
-                        <div class="tech-p">
+                        <p class="category">Online Store</p>
+                        <div class="tech-stack">
                             <span>NodeJs</span>
                             <span>Hono</span>
                             <span>Drizzle</span>
                         </div>
-
-                        <div class="deploy">
-                            <a href="https://github.com/MC-AHN/MIEKU-N-STORE" target="_blank">Repo</a>
-                            <a href="https://mieku-n-cafe.alchemists.my.id/" target="_blank">Demo</a>
+                        <div class="links">
+                            <a href="https://github.com/MC-AHN/MIEKU-N-STORE" target="_blank" class="btn-repo">Repository</a>
+                            <a href="https://mieku-n-cafe.alchemists.my.id/" target="_blank" class="btn-demo">Demo</a>
                         </div>
                     </div>
-
                 </div>
-                <div class="c">
 
-                    <img src="asset/quran.png" alt="">
+                <div class="project-card">
+                    <div class="img-box">
+                        <img src="asset/quran.png" alt="Adz-Dzikr">
+                    </div>
                     <div class="text">
                         <h3>Adz-Dzikr</h3>
-                        <p>Quran Online</p>
-
-                        <div class="tech-p">
+                        <p class="category">Online Quran</p>
+                        <div class="tech-stack">
                             <span>NodeJs</span>
                             <span>Hono</span>
                             <span>Drizzle</span>
                         </div>
-
-                        <div class="deploy">
-                            <a href="https://github.com/MC-AHN/adz-dzikr" target="_blank">Repo</a>
-                            <a href="https://adz-dzikr.alchemists.my.id/" target="_blank">Demo</a>
+                        <div class="links">
+                            <a href="https://github.com/MC-AHN/adz-dzikr" target="_blank" class="btn-repo">Repository</a>
+                            <a href="https://adz-dzikr.alchemists.my.id/" target="_blank" class="btn-demo">Demo</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -243,7 +239,7 @@
             <div class="text">
                 <h2 class="title-aboutme">About <strong>ME</strong></h2>
                 <p class="desc">
-                    Halo, saya Muhammad (Moci). Saya adalah seorang pelajar dan pengembang backend yang lebih menghargai
+                    Halo, saya Muhammad. Saya adalah seorang pelajar dan pengembang backend yang lebih menghargai
                     proses daripada hasil instan. Bagi saya, menulis ulang setiap baris kode adalah cara untuk
                     memastikan bahwa sistem yang saya bangun memiliki 'jiwa' dan saya memahami sepenuhnya logika di
                     baliknya.
@@ -262,6 +258,42 @@
                 </div>
             </div>
         </div>
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+        
+        <div class="contact-form">
+            <h2>Get In <strong>Touch</strong></h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Write a Message" rows="5"></textarea>
+                <button type="submit" class="btn-send">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>My Contact Details</h3>
+            <div class="info-item">
+                <span>EMAIL</span>
+                <p>moci@example.com</p>
+            </div>
+            <div class="info-item">
+                <span>ADDRESS</span>
+                <p>Boyolali, Central Java, Indonesia</p>
+            </div>
+            <div class="info-item">
+                <span>SOCIALS</span>
+                <div class="social-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     </main>
 

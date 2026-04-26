@@ -1,90 +1,97 @@
 .contact {
-    padding: 120px;
     background-color: #1a1a1a;
 }
 
+/* Container Utama: Mengunci di tengah */
 .contact-container {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    gap: 80px;
+    max-width: 1000px; /* Sesuai request kamu */
+    margin: 0 auto;    /* KUNCI: Membuat konten di tengah layar */
+    padding: 100px 20px;
 }
 
+/* Form (Kiri) */
 .contact-form {
-    flex: 2;
+    flex: 1.5;
 }
 
 .contact-form h2 {
-    font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .contact-form h2 strong {
     color: #c5f74f;
 }
 
-.contact-form input,
+/* Gaya Input Minimalis (Hanya Garis Bawah) */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
 .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #242424;
-    border: 1px solid #333;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+    margin-bottom: 30px;
     color: #fff;
-    border-radius: 8px;
-    outline:  none;
+    font-size: 1rem;
+    outline: none;
     transition: 0.3s;
 }
 
-.contact-form input:focus,
+.contact-form input:focus, 
 .contact-form textarea:focus {
-    border-color: #c5f74f;
+    border-bottom: 1px solid #c5f74f;
 }
 
-.contact-form .btn-send {
+/* Tombol Send */
+.btn-send {
     background-color: #c5f74f;
     color: #000;
     padding: 15px 40px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    width: fit-content; /* Biar nggak melar selebar layar */
 }
 
-.btn-send:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(197, 247, 79, 0.3);
-}
-
-.contact .contact-info {
+/* Info (Kanan) */
+.contact-info {
     flex: 1;
 }
 
-.contact .contact-info h3 {
+.contact-info h3 {
     color: #fff;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-.contact .contact-info .info-item {
-    margin-bottom: 25px;
+.info-item {
+    margin-bottom: 35px;
 }
 
-.contact-info .info-item span {
+.info-item span {
     display: block;
     color: #666;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.info-item p, .info-item a {
-    color: #b0b0b0;
+.info-item p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.social-links a {
+    color: #c5f74f;
     text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
+    margin-right: 15px;
 }

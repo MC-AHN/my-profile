@@ -13,6 +13,7 @@
 
 .resume .wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5rem;
     gap: 3rem;
     justify-content: center;
@@ -22,6 +23,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    flex: 1;
+    min-width: 350px;
+    max-width: 550px;
 }
 
 .resume .wrap .card > .title {
@@ -31,12 +36,13 @@
 }
 
 .resume .wrap .card .content {
-    width: 50rem;
+    width: 100%;
     padding: 25px;
     border-radius: 10px;
     background-color: #242424;
     color: white;
     letter-spacing: 2px;
+    box-sizing: border-box;
 }
 
 
