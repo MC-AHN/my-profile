@@ -1,10 +1,10 @@
 <nav>
     <div class="container">
-        <a href="">HOME</a>
-        <a href="">PORTOFOLIO</a>
-        <a href="">RESUME</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
+        <a href="#hero">HOME</a>
+        <a href="#portofolio">PORTOFOLIO</a>
+        <a href="#resume">RESUME</a>
+        <a href="#aboutme">ABOUT</a>
+        <a href="#contact">CONTACT</a>
     </div>
 </nav>
 

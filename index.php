@@ -7,7 +7,7 @@
     <?php include './partial/nav.php'?>
 
     <main>
-        <div class="hero">
+        <div class="hero" id="hero">
             <p class="title">Hello, I'm <br> <strong>Muhammad</strong></p>
             <p>AND THIS IS MY RESUME</p>
         </div>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="portofolio">
+        <div class="portofolio" id="portofolio">
             <p>FEATURED <strong>PORTOFOLIO</strong></p>
             <div class="wrap">
                 <div class="project-card">
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="resume">
+        <div class="resume" id="resume">
             <p>My <strong>RESUME</strong></p>
             <div class="wrap">
                 <div class="card education">
@@ -232,12 +232,12 @@
             </div>
         </div>
 
-        <div class="aboutme">
+        <div class="aboutme" id="aboutme">
             <div class="image">
                 <img src="asset/aboutme1.png" alt="">
             </div>
             <div class="text">
-                <h2 class="title-aboutme">About <strong>ME</strong></h2>
+                <h2 class="title-aboutme">About <strong>Me</strong></h2>
                 <p class="desc">
                     Halo, saya Muhammad. Saya adalah seorang pelajar dan pengembang backend yang lebih menghargai
                     proses daripada hasil instan. Bagi saya, menulis ulang setiap baris kode adalah cara untuk
@@ -259,7 +259,7 @@
             </div>
         </div>
 
-<section class="contact" id="contact">
+<section class="contact" id="contact" id="contact">
     <div class="contact-container">
         
         <div class="contact-form">
@@ -277,7 +277,7 @@
             <h3>My Contact Details</h3>
             <div class="info-item">
                 <span>EMAIL</span>
-                <p>moci@example.com</p>
+                <p>muhammad@example.com</p>
             </div>
             <div class="info-item">
                 <span>ADDRESS</span>
@@ -286,7 +286,7 @@
             <div class="info-item">
                 <span>SOCIALS</span>
                 <div class="social-links">
-                    <a href="#">GitHub</a>
+                    <a href="">GitHub</a>
                     <a href="#">LinkedIn</a>
                 </div>
             </div>
