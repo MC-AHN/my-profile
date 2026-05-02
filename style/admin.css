@@ -1,0 +1,61 @@
+div .container .table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.portfolio-table th {
+    background-color: #252525;
+    color: #ccff00;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #333;
+}
+
+.portfolio-table td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    vertical-align: middle;
+}
+
+.portfolio-table tr:hover {
+    background-color: #222;
+}
+
+.badge-tech {
+    display: inline-block;
+    background: rgba(204, 255, 0, 0.1);  
+    color: #ccff00;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 1px solid #ccff00;
+    margin: 2px;
+    text-transform: uppercase;  
+}
+
+.btn-delete {
+    background: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    background: #ccff00;
+    transform: scale(1.05);
+}
